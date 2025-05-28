@@ -1,26 +1,26 @@
 frase = 'aaaaoootesadrtgfhjykugftdrctycufikblnkatuwfevdukylhijkqw'
 
 i = 0
-qtd_apareceu_mais_vezes = 0
-letra_apareceu_mais_vezes = ''
+qtap = 0
+letap = ''
 
 while i < len(frase):
-    letra_atual = frase[i]
+    leatt = frase[i]
 
-    if letra_atual == ' ':
+    if leatt == ' ':
         i += 1
         continue
 
-    qtd_atual = frase.count(letra_atual)
+    qttadt = frase.count(leatt)
 
-    if qtd_apareceu_mais_vezes <= qtd_atual:
-        qtd_apareceu_mais_vezes = qtd_atual
-        letra_apareceu_mais_vezes = letra_atual
+    if qtap <= qttadt:
+        qtap = qttadt
+        letap = leatt
 
     i += 1
 
 print(
     'A letra que apareceu mais vezes foi '
-    f'"{letra_apareceu_mais_vezes}" que apareceu '
-    f'{qtd_apareceu_mais_vezes}x'
+    f'"{letap}" que apareceu '
+    f'{qtap}x'
 )
